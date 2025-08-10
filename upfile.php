@@ -5,7 +5,7 @@
             throw new Exception("diretorio errado");
         if(is_executable($_FILES["arquivoup"]["tmp_name"]))
             throw new Exception ("Não é possivel usar esse arquivo");
-            echo "ta certo ainda";
+            echo "ta certo ainda<br>";
             //var_dump ($_FILES);
             $extensao_arquivo = pathinfo($_FILES["arquivoup"]["name"],PATHINFO_EXTENSION);
             $arquivo_unico = uniqid("enviado_"). "." . $extensao_arquivo;
