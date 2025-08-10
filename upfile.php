@@ -13,7 +13,7 @@
             if(move_uploaded_file($_FILES["arquivoup"]["tmp_name"],$nome_arquivo_servidor)){
                 echo "arquivo enviado";    
             }else throw new Exception("erro" . $_FILES["arquivoup"]["error"]);
-    }catch (Exception $e){
-        echo $e -> getMessage();
-    }
+        }catch (Exception $e){
+            echo $e -> getMessage();
+        }
 ?>
